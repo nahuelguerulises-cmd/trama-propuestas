@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pura — Café de especialidad en Colegiales, Buenos Aires</title>
+  <meta name="description" content="Café de especialidad en Maure 4008, Colegiales. Mirá si está abierto ahora o en cualquier momento de la semana.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f1f1ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1b1411" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%238b5a3c' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap"></noscript>
+  <script type="module" crossorigin src="./assets/index-DEhYc5B2.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DMWDGWuH.css">
+</head>
+<body>
+  <main>
+    <section class="portada" aria-labelledby="nombre">
+      <div class="texto">
+        <h1 id="nombre" class="nombre">Pura</h1>
+        <p class="bajada">Café de especialidad en Colegiales.</p>
+      </div>
+
+      <div class="reloj" aria-labelledby="reloj-t">
+        <h2 id="reloj-t" class="oculto">¿Está abierto?</h2>
+        <canvas class="mesa" aria-hidden="true"></canvas>
+        <p class="lectura" aria-live="polite"><span class="lectura-cuando"></span> <strong class="lectura-estado"></strong></p>
+        <div class="controles">
+          <label>
+            <span>Día</span>
+            <select name="dia">
+              <option value="1">Lunes</option><option value="2">Martes</option><option value="3">Miércoles</option>
+              <option value="4">Jueves</option><option value="5">Viernes</option><option value="6">Sábado</option><option value="0">Domingo</option>
+            </select>
+          </label>
+          <label class="hora">
+            <span>Hora <output class="hora-valor"></output></span>
+            <input name="hora" type="range" min="0" max="1425" step="15">
+          </label>
+          <button class="ahora" type="button">Volver a ahora</button>
+        </div>
+        <p class="pista">Cada anillo es un día; la mancha, las horas en que está abierto. Tocá o arrastrá sobre la mesa para mover la aguja.</p>
+      </div>
+    </section>
+
+    <section class="datos" aria-label="Datos">
+      <div class="dato dato-nota">
+        <p class="nota-grande">4,8</p>
+        <p>en Google, con 905 reseñas<br><small>Dato de Google Maps al 24/10/2026.</small></p>
+      </div>
+      <div class="dato">
+        <h2>Dónde</h2>
+        <p>Maure 4008<br>Colegiales, Buenos Aires</p>
+        <a class="enlace" href="https://www.google.com/maps/search/?api=1&query=Pura%20Caf%C3%A9%20de%20Especialidad&query_place_id=ChIJNT7NLf61vJURhZ5z3JUb8ps" target="_blank" rel="noopener">Abrir en Google Maps</a>
+      </div>
+      <div class="dato">
+        <h2>Horario</h2>
+        <dl class="horario">
+          <dt>Lunes</dt><dd>12:30 a 19</dd>
+          <dt>Martes a viernes</dt><dd>8:30 a 20</dd>
+          <dt>Sábado y domingo</dt><dd>9:30 a 20</dd>
+        </dl>
+      </div>
+      <div class="dato">
+        <h2>Carta</h2>
+        <p>Cafés, métodos y pastelería: [A CONFIRMAR].<br>Precios: [PRECIO].</p>
+      </div>
+    </section>
+
+    <section class="contacto" aria-labelledby="contacto-t">
+      <div>
+        <h2 id="contacto-t">Escribinos</h2>
+        <p>Dejá tu consulta: se arma el mensaje y se abre WhatsApp.</p>
+      </div>
+      <form class="formulario">
+        <label><span>Tu nombre</span><input name="nombre" autocomplete="given-name" required></label>
+        <label><span>Tu consulta</span><textarea name="consulta" rows="3" required></textarea></label>
+        <div class="vista">
+          <p class="vista-t">Así va a quedar tu mensaje</p>
+          <p class="vista-msg" aria-live="polite"></p>
+        </div>
+        <button class="boton" type="submit">Abrir WhatsApp</button>
+        <p class="sin-numero" hidden>El WhatsApp del café está [A CONFIRMAR]. Cuando esté, este botón abre la conversación con el mensaje listo.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Propuesta de sitio web preparada por TRAMA et FILUM. No es la web oficial del negocio.</p>
+  </footer>
+
+</body>
+</html>
