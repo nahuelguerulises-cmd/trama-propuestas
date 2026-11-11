@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Club Montego — Pileta, gimnasio y clases en La Plata</title>
+  <meta name="description" content="Club Montego, calle 29 n.º 375 entre 39 y 40, La Plata. Pileta climatizada, musculación, fitness, funcional y power, indoor cycling y Montego Café & Resto. Armá tu semana en el club.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#e6f1f3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#071b24" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e6c8f'/%3E%3Cpath d='M4 12h24M4 20h24' stroke='%23fff' stroke-width='2.5' stroke-dasharray='3 3'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500..900&family=Rethink+Sans:wght@400..700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500..900&family=Rethink+Sans:wght@400..700&display=swap"></noscript>
+  <script>if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('con-movimiento');</script>
+  <script type="module" crossorigin src="./assets/index-BhfKkVkv.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Biclg7Z2.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Ir al contenido</a>
+  <header class="barra">
+    <a class="marca" href="#inicio">Club Montego</a>
+    <nav aria-label="Secciones">
+      <a href="#semana-club">Armá tu semana</a>
+      <a href="#horarios">Horarios</a>
+    </nav>
+    <button class="tema" type="button" aria-pressed="false" aria-label="Pasar a modo oscuro">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+    </button>
+  </header>
+
+  <main id="contenido">
+    <section class="pelicula" id="inicio" aria-labelledby="titulo">
+      <div class="escenario">
+        <div class="pileta" aria-hidden="true">
+          <div class="agua"></div>
+          <div class="fondo-pileta"><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="burbujas"></div>
+          <svg class="superficie" viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0 40 Q 75 20 150 40 T 300 40 T 450 40 T 600 40 T 750 40 T 900 40 T 1050 40 T 1200 40 V80 H0 Z"/></svg>
+        </div>
+        <div class="capa">
+          <div class="cabecera">
+            <h1 id="titulo">Club Montego</h1>
+            <p>Más que un club, una familia. Calle 29 n.º 375, entre 39 y 40, La Plata.</p>
+            <p class="nota-google"><strong>4,5</strong> en Google con 1.340 reseñas</p>
+          </div>
+          <ol class="andariveles">
+            <li class="andarivel" data-i="0"><h2>La pileta</h2><p>Es lo que más se nombra en las reseñas: pileta climatizada para nadar todo el año.</p></li>
+            <li class="andarivel" data-i="1"><h2>Musculación y fitness</h2><p>Máquinas nuevas, cuidadas y que funcionan, más clases de fitness.</p></li>
+            <li class="andarivel" data-i="2"><h2>Funcional y power</h2><p>Entrenamiento funcional y power, con instructores atentos.</p></li>
+            <li class="andarivel" data-i="3"><h2>Indoor cycling y fútbol 5</h2><p>Una sala de indoor cycling y cancha de fútbol 5 en el mismo club.</p></li>
+            <li class="andarivel" data-i="4"><h2>Y después, al café</h2><p>Montego Café &amp; Resto, dentro del club: 4,5 en Google con 224 reseñas.</p><a class="boton" href="#semana-club">Armá tu semana</a></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="semana-club" id="semana-club" aria-labelledby="semana-t">
+      <div class="semana-texto">
+        <h2 id="semana-t">Armá tu semana en el club</h2>
+        <p>Tocá las actividades de cada día. Ves tu semana armada, los puntos que sumarías y la mandás por WhatsApp para asociarte.</p>
+        <p class="aviso">Propuesta de fidelización: cada actividad suma un punto para canjear en Montego Café &amp; Resto. Los puntos y los canjes son de ejemplo.</p>
+      </div>
+      <div class="planilla">
+        <div class="tabla-semana" id="tabla" role="group" aria-label="Actividades por día"></div>
+        <div class="resumen">
+          <p class="puntos"><strong id="puntos">0</strong> puntos por semana · <span id="mes">0</span> al mes</p>
+          <p class="canje" id="canje">Elegí actividades para ver qué canjearías en el café.</p>
+        </div>
+        <form class="form" id="form-semana">
+          <label class="campo"><span>Nombre</span><input name="nombre" autocomplete="given-name" required></label>
+          <output class="vista-previa" id="vista-semana" aria-live="polite"></output>
+          <button class="boton" type="submit">Consultar por WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="horarios" id="horarios" aria-labelledby="horarios-t">
+      <h2 id="horarios-t">Horarios</h2>
+      <p class="estado" id="estado" aria-live="polite"></p>
+      <dl class="semana" id="semana"></dl>
+      <p class="nota">Horario del club relevado en fuentes públicas el 11/11/2026. Grilla de cada actividad: [A CONFIRMAR].</p>
+      <address>Calle 29 n.º 375 entre 39 y 40, La Plata · Tel. 0221 459-5845 ·
+        <a href="https://www.google.com/maps/search/?api=1&query=Club+Montego+29+375+La+Plata" target="_blank" rel="noopener">Ver en el mapa</a> ·
+        <a href="https://www.instagram.com/clubmontego/" target="_blank" rel="noopener">@clubmontego</a> ·
+        <a href="https://www.instagram.com/montego.caferesto/" target="_blank" rel="noopener">@montego.caferesto</a>
+      </address>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Propuesta de sitio web preparada por TRAMA et FILUM. No es la web oficial del negocio.</p>
+    <p>Datos de Google Maps, montego.com.ar y @clubmontego (11/11/2026). Valores: [PRECIO].</p>
+  </footer>
+</body>
+</html>
